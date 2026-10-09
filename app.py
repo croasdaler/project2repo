@@ -19,6 +19,6 @@ class AppHandler(BaseHTTPRequestHandler):
 
 
 if __name__ == "__main__":
-    print(f"Application listening on port {PORT}", flush=True)
+    print(f"Status: healthy - croasdaler", flush=True)
     server = HTTPServer((HOST, PORT), AppHandler)
     server.serve_forever()
